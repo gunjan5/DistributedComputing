@@ -3,11 +3,7 @@ Assignment 1: web server (written in Go)
 Date: Jan 28
 
 
-
-
-
-
-Test cases: 
+* Test cases [All passing]: 
 ================
 HTTP/1.0, 200 OK
 	telnet localhost 8080
@@ -47,29 +43,35 @@ Supports HTTP/1.1 and 1.0
 Spins new threads (goroutine) for every new connections 
 
 
-List of files:
 
-├── Santa Clara University_files
+* List of files:
+================
+
+.
+├── Makefile          //makefile
+├── README.txt        //this file :)
+├── Santa Clara University_files //default page supporting files directory
 │   ├── -livewhale-plugins-jquery-jquery.lw-widget.js
 │   ├── 311_levis.jpg
-│   ├── BryanStevenson760480-760x481.jpg
-...  ... ...
+... ... ...
 │   ├── scu.css
 │   ├── search-autocomplete.js
 │   └── sinskywchild760480.jpg
-├── nopermission.html			//set it to no read permission (sudo chmod 200 nopermission.html)
-├── index.html
-├── minion.gif
-├── r2d2.jpg
-├── server
-└── server.go
-script.PDF
+├── index.html         //default page
+├── minion.gif         //test GIF file
+├── nopermission.html  //set it to no read permission (sudo chmod 200 nopermission.html)
+├── r2d2.jpg           //test JPG file
+├── script.pdf        //screenshots of some tests
+├── server             //compiled program (run `make build` to get it)
+└── server.go         //main code
 
-1 directory, 42 files
+1 directory, 45 files
 
 
 
-Instructions for running:
+
+* Instructions for running:
+=========================
 -This assignment is written in Google's new programming language Go aka Golang (with professor's prior permission)
 -Tested with Go version 1.5
 -makefile is provided 
